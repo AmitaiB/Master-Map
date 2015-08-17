@@ -15,6 +15,8 @@
 		38B02AFF1B82016500C2B0A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B02AFE1B82016500C2B0A2 /* Images.xcassets */; };
 		38B02B021B82016500C2B0A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B02B001B82016500C2B0A2 /* LaunchScreen.xib */; };
 		38B02B0E1B82016500C2B0A2 /* Master_MapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B02B0D1B82016500C2B0A2 /* Master_MapTests.m */; };
+		38B02B191B8205A900C2B0A2 /* MMapConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B02B181B8205A900C2B0A2 /* MMapConstants.m */; };
+		A6B84F7446286C375610886E /* libPods-Master-Map.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D258EFEA5DBF25B880700C4B /* libPods-Master-Map.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33C68B9475FDA6967D0659EB /* Pods-Master-Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master-Map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Master-Map/Pods-Master-Map.debug.xcconfig"; sourceTree = "<group>"; };
 		38B02AEB1B82016500C2B0A2 /* Master-Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master-Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B02AEF1B82016500C2B0A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38B02AF01B82016500C2B0A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +46,10 @@
 		38B02B071B82016500C2B0A2 /* Master-MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Master-MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B02B0C1B82016500C2B0A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38B02B0D1B82016500C2B0A2 /* Master_MapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Master_MapTests.m; sourceTree = "<group>"; };
+		38B02B171B8205A900C2B0A2 /* MMapConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMapConstants.h; sourceTree = "<group>"; };
+		38B02B181B8205A900C2B0A2 /* MMapConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMapConstants.m; sourceTree = "<group>"; };
+		7355E322774F2A72BDC32C40 /* Pods-Master-Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master-Map.release.xcconfig"; path = "Pods/Target Support Files/Pods-Master-Map/Pods-Master-Map.release.xcconfig"; sourceTree = "<group>"; };
+		D258EFEA5DBF25B880700C4B /* libPods-Master-Map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Master-Map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B84F7446286C375610886E /* libPods-Master-Map.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +77,8 @@
 				38B02AED1B82016500C2B0A2 /* Master-Map */,
 				38B02B0A1B82016500C2B0A2 /* Master-MapTests */,
 				38B02AEC1B82016500C2B0A2 /* Products */,
+				EC4694611102BB931911082D /* Pods */,
+				92EF5A7A2D237596C8C64EE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +113,8 @@
 			children = (
 				38B02AEF1B82016500C2B0A2 /* Info.plist */,
 				38B02AF01B82016500C2B0A2 /* main.m */,
+				38B02B171B8205A900C2B0A2 /* MMapConstants.h */,
+				38B02B181B8205A900C2B0A2 /* MMapConstants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,6 +136,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		92EF5A7A2D237596C8C64EE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D258EFEA5DBF25B880700C4B /* libPods-Master-Map.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC4694611102BB931911082D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33C68B9475FDA6967D0659EB /* Pods-Master-Map.debug.xcconfig */,
+				7355E322774F2A72BDC32C40 /* Pods-Master-Map.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38B02B111B82016500C2B0A2 /* Build configuration list for PBXNativeTarget "Master-Map" */;
 			buildPhases = (
+				8A1458C95453B8B7CA2D221B /* Check Pods Manifest.lock */,
 				38B02AE71B82016500C2B0A2 /* Sources */,
 				38B02AE81B82016500C2B0A2 /* Frameworks */,
 				38B02AE91B82016500C2B0A2 /* Resources */,
+				97B1990B175ABD4F746130D4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +251,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A1458C95453B8B7CA2D221B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97B1990B175ABD4F746130D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Master-Map/Pods-Master-Map-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38B02AE71B82016500C2B0A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -227,6 +291,7 @@
 			files = (
 				38B02AF41B82016500C2B0A2 /* AppDelegate.m in Sources */,
 				38B02AF71B82016500C2B0A2 /* MasterViewController.m in Sources */,
+				38B02B191B8205A900C2B0A2 /* MMapConstants.m in Sources */,
 				38B02AF11B82016500C2B0A2 /* main.m in Sources */,
 				38B02AFA1B82016500C2B0A2 /* MapDetailViewController.m in Sources */,
 			);
@@ -352,6 +417,7 @@
 		};
 		38B02B121B82016500C2B0A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C68B9475FDA6967D0659EB /* Pods-Master-Map.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -363,6 +429,7 @@
 		};
 		38B02B131B82016500C2B0A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7355E322774F2A72BDC32C40 /* Pods-Master-Map.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -425,6 +492,7 @@
 				38B02B131B82016500C2B0A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38B02B141B82016500C2B0A2 /* Build configuration list for PBXNativeTarget "Master-MapTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +501,7 @@
 				38B02B161B82016500C2B0A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
