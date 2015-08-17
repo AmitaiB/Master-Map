@@ -103,6 +103,7 @@
 				38B02AFB1B82016500C2B0A2 /* Main.storyboard */,
 				38B02AFE1B82016500C2B0A2 /* Images.xcassets */,
 				38B02B001B82016500C2B0A2 /* LaunchScreen.xib */,
+				38B02B1A1B82068E00C2B0A2 /* Constants */,
 				38B02AEE1B82016500C2B0A2 /* Supporting Files */,
 			);
 			path = "Master-Map";
@@ -113,8 +114,6 @@
 			children = (
 				38B02AEF1B82016500C2B0A2 /* Info.plist */,
 				38B02AF01B82016500C2B0A2 /* main.m */,
-				38B02B171B8205A900C2B0A2 /* MMapConstants.h */,
-				38B02B181B8205A900C2B0A2 /* MMapConstants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -134,6 +133,15 @@
 				38B02B0C1B82016500C2B0A2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38B02B1A1B82068E00C2B0A2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				38B02B171B8205A900C2B0A2 /* MMapConstants.h */,
+				38B02B181B8205A900C2B0A2 /* MMapConstants.m */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		92EF5A7A2D237596C8C64EE0 /* Frameworks */ = {
