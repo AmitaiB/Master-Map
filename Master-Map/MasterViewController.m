@@ -7,14 +7,16 @@
 //
 
 #import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "MapDetailViewController.h"
 
 @interface MasterViewController ()
 
-@property NSMutableArray *objects;
+@property NSMutableArray *tourStopGeoPoints;
 @end
 
 @implementation MasterViewController
+
+static NSString * const masterToMapSegueID = @"masterToMapSegueID";
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -35,10 +37,10 @@
 }
 
 - (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
+    if (!self.tourStopGeoPoints) {
+        self.tourStopGeoPoints = [[NSMutableArray alloc] init];
     }
-    [self.objects insertObject:[NSDate date] atIndex:0];
+    [self.tourStopGeoPoints insertObject:[NSDate date] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -48,7 +50,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
+        NSDate *object = self.tourStopGeoPoints[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }
@@ -60,7 +62,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return self.tourStopGeoPoints.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -69,7 +71,7 @@
     if (indexPath.row == 0) {
         cell.textLabel.text = @"Click me to see the map!";
     } else {
-        NSDate *object = self.objects[indexPath.row];
+        NSDate *object = self.tourStopGeoPoints[indexPath.row];
         cell.textLabel.text = [object description];
     }
     return cell;
@@ -82,7 +84,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
+        [self.tourStopGeoPoints removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.

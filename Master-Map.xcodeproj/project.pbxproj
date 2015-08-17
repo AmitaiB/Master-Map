@@ -10,7 +10,7 @@
 		38B02AF11B82016500C2B0A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B02AF01B82016500C2B0A2 /* main.m */; };
 		38B02AF41B82016500C2B0A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B02AF31B82016500C2B0A2 /* AppDelegate.m */; };
 		38B02AF71B82016500C2B0A2 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B02AF61B82016500C2B0A2 /* MasterViewController.m */; };
-		38B02AFA1B82016500C2B0A2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B02AF91B82016500C2B0A2 /* DetailViewController.m */; };
+		38B02AFA1B82016500C2B0A2 /* MapDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B02AF91B82016500C2B0A2 /* MapDetailViewController.m */; };
 		38B02AFD1B82016500C2B0A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B02AFB1B82016500C2B0A2 /* Main.storyboard */; };
 		38B02AFF1B82016500C2B0A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B02AFE1B82016500C2B0A2 /* Images.xcassets */; };
 		38B02B021B82016500C2B0A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B02B001B82016500C2B0A2 /* LaunchScreen.xib */; };
@@ -35,8 +35,8 @@
 		38B02AF31B82016500C2B0A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38B02AF51B82016500C2B0A2 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		38B02AF61B82016500C2B0A2 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		38B02AF81B82016500C2B0A2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		38B02AF91B82016500C2B0A2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		38B02AF81B82016500C2B0A2 /* MapDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapDetailViewController.h; sourceTree = "<group>"; };
+		38B02AF91B82016500C2B0A2 /* MapDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapDetailViewController.m; sourceTree = "<group>"; };
 		38B02AFC1B82016500C2B0A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38B02AFE1B82016500C2B0A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38B02B011B82016500C2B0A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 				38B02AF31B82016500C2B0A2 /* AppDelegate.m */,
 				38B02AF51B82016500C2B0A2 /* MasterViewController.h */,
 				38B02AF61B82016500C2B0A2 /* MasterViewController.m */,
-				38B02AF81B82016500C2B0A2 /* DetailViewController.h */,
-				38B02AF91B82016500C2B0A2 /* DetailViewController.m */,
+				38B02AF81B82016500C2B0A2 /* MapDetailViewController.h */,
+				38B02AF91B82016500C2B0A2 /* MapDetailViewController.m */,
 				38B02AFB1B82016500C2B0A2 /* Main.storyboard */,
 				38B02AFE1B82016500C2B0A2 /* Images.xcassets */,
 				38B02B001B82016500C2B0A2 /* LaunchScreen.xib */,
@@ -228,7 +228,7 @@
 				38B02AF41B82016500C2B0A2 /* AppDelegate.m in Sources */,
 				38B02AF71B82016500C2B0A2 /* MasterViewController.m in Sources */,
 				38B02AF11B82016500C2B0A2 /* main.m in Sources */,
-				38B02AFA1B82016500C2B0A2 /* DetailViewController.m in Sources */,
+				38B02AFA1B82016500C2B0A2 /* MapDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
